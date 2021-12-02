@@ -1,0 +1,23 @@
+<div class="row mt-5">
+    <div class="col-md-5 mx-auto">
+        <div class="card">
+            <div class="card-header">
+                Login
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input [(ngModel)]="user.Email" type="text" class="form-control" name="Email" id="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input [(ngModel)]="user.Password" type="password" class="form-control" name="Password" id="password">
+                    </div>
+                    <a routerLink="/register">Not a user? Register</a>
+                    <br><button class="btn btn-primary" style="margin: 10px;" type="button" (click)="onLoginClick()">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-2 mx-auto"></div>
+        <div class="col-md-4 mx-auto">
+            <div class="card">
+                <div class="card-header">
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="input1">Enter number 1</label>
+                            <input #input1 type="text" class="form-control" name="Email" id="input1">
+                        </div>
+                        <div class="form-group">
+                            <label for="input2">Enter number 2</label>
+                            <input #input2 type="text" class="form-control" name="input2" id="input2">
+                        </div>
+                        <div>
+                            Sum : {{sum}}
+                            <br>Difference : {{diff}}
+                        </div>
+                        <button class="btn btn-primary" style="margin: 10px;" type="button"
+                            (click)="onAddClick(input1.value,input2.value)">Add</button>
+                        <button class="btn btn-primary" style="margin: 10px;" type="button"
+                            (click)="onSubtractClick(input1.value,input2.value)">Subtract</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mx-auto">
+            <div class="card">
+                <div class="card-header">
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="input3">Enter number 1</label>
+                            <input #input3 type="text" class="form-control" name="input3" id="input3">
+                        </div>
+                        <div class="form-group">
+                            <label for="input4">Enter number 2</label>
+                            <input #input4 type="text" class="form-control" name="input4" id="input4">
+                        </div>
+                        <div>
+                            Product : {{product}}
+                            <br>Division : {{div}}
+                        </div>
+                        <button class="btn btn-primary" style="margin: 10px;" type="button"
+                            (click)="onMultiplyClick(input3.value,input4.value)">Multiply</button>
+                        <button class="btn btn-primary" style="margin: 10px;" type="button"
+                            (click)="onDivideClick(input3.value,input4.value)">Divide</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 mx-auto"></div>
+    </div>
+</div>

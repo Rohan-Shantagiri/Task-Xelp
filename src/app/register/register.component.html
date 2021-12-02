@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="main">
+        <div class="row mt-5">
+            <div class="col-md-5 mx-auto">
+                <div class="card">
+                    <div class="card-header">
+                        Registration
+                    </div>
+                    <div class="card-body">
+                        <form #register="ngForm" >
+                            <div class="form-group">
+                                <label for="Name">Name</label>
+                                <input [(ngModel)]="user.Name" type="text" class="form-control" name="Name"
+                                    id="Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="Mobileno">Mobile no</label>
+                                <input [(ngModel)]="user.Mobileno" type="text" class="form-control" name="Mobileno"
+                                    id="Mobileno">
+                            </div>
+                            <div class="form-group">
+                                <label for="Email">Email</label>
+                                <input [(ngModel)]="user.Email" type="text" class="form-control" name="Email"
+                                    id="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="Password">Password</label>
+                                <input [(ngModel)]="user.Password" type="password" class="form-control" name="Password"
+                                    id="Password">
+                            </div>
+                            <button class="btn btn-primary" style="margin: 10px;" type="button"
+                                (click)="onRegisterClick()">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-danger">
+  <a href="#" id="logo" class="navbar-brand">MyApp</a>
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav" *ngIf="auth.isLoggedIn()">
+          <li class="nav-item active">
+              <a class="nav-item nav-link avtive" (click)="onLogout()" id="logout" style="color: white; cursor: pointer;">Logout</a>
+          </li>
+      </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>
